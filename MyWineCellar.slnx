@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="MyWineCellar.Api/MyWineCellar.Api.csproj" />
+  <Project Path="MyWineCellar.Data/MyWineCellar.Data.csproj" />
+  <Project Path="MyWineCellar.Service/MyWineCellar.Service.csproj" />
+</Solution>
