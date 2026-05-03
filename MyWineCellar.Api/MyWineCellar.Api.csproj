@@ -12,6 +12,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\MyWineCellar.Data\MyWineCellar.Data.csproj" />
+    <ProjectReference Include="..\MyWineCellar.Models\MyWineCellar.Models.csproj" />
     <ProjectReference Include="..\MyWineCellar.Service\MyWineCellar.Service.csproj" />
   </ItemGroup>
 

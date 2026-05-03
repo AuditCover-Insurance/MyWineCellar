@@ -1,5 +1,6 @@
 <Solution>
   <Project Path="MyWineCellar.Api/MyWineCellar.Api.csproj" />
   <Project Path="MyWineCellar.Data/MyWineCellar.Data.csproj" />
+  <Project Path="MyWineCellar.Models/MyWineCellar.Models.csproj" Id="77db2388-1c32-488f-907d-2b3a1a2a6c7b" />
   <Project Path="MyWineCellar.Service/MyWineCellar.Service.csproj" />
 </Solution>

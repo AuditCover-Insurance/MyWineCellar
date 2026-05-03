@@ -44,6 +44,7 @@ ScaffoldingReadMe.txt
 ~$*
 *~
 CodeCoverage/
+.db
 
 # MSBuild Binary and Structured Log
 *.binlog
@@ -56,3 +57,6 @@ CodeCoverage/
 *.VisualState.xml
 TestResult.xml
 nunit-*.xml
+/MyWineCellar.Api/winecellar.db
+/MyWineCellar.Api/winecellar.db-shm
+/MyWineCellar.Api/winecellar.db-wal

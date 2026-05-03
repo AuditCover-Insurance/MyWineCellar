@@ -7,7 +7,9 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <FrameworkReference Include="Microsoft.AspNetCore.App" />
     <ProjectReference Include="..\MyWineCellar.Data\MyWineCellar.Data.csproj" />
+    <ProjectReference Include="..\MyWineCellar.Models\MyWineCellar.Models.csproj" />
   </ItemGroup>
 
 </Project>
