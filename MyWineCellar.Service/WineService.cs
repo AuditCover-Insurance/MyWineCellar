@@ -9,12 +9,12 @@ namespace MyWineCellar.Service;
 
 public class WineService(WineCellarDbContext db, IHttpContextAccessor httpContextAccessor) : BaseService(db, httpContextAccessor)
 {
-    public async Task<IEnumerable<CellarEntryDto>> GetCellarEntriesAsync(int userId, int? olderThanMonths)
+    public async Task<IEnumerable<CellarEntryDto>> GetCellarEntriesAsync(int userId, int? addedSinceInMonths)
     {
         return await Db.CellarEntries
             .AsNoTracking()
             .Where(e => e.UserId == userId)
-            .Where(e => olderThanMonths == null || e.AddedAt >= DateTime.UtcNow.AddMonths(-olderThanMonths.Value))
+            .Where(e => addedSinceInMonths == null || e.AddedAt >= DateTime.UtcNow.AddMonths(-addedSinceInMonths.Value))
             .Select(e => new CellarEntryDto(
                 e.Id,
                 e.WineId,

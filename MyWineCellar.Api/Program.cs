@@ -85,9 +85,9 @@ app.MapPost("/users/{userId}/wines", async (int userId, NewCustomWineRequest req
 .RequireAuthorization()
 .WithName("AddCustomWine");
 
-app.MapGet("/users/{userId}/cellar", async (int userId, int? olderThanMonths, ClaimsPrincipal user, WineService wineService) =>
+app.MapGet("/users/{userId}/cellar", async (int userId, int? addedSinceInMonths, ClaimsPrincipal user, WineService wineService) =>
 {
-    var wines = await wineService.GetCellarEntriesAsync(userId, olderThanMonths);
+    var wines = await wineService.GetCellarEntriesAsync(userId, addedSinceInMonths);
     return Results.Ok(wines);
 })
 .RequireAuthorization()
